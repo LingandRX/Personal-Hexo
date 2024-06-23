@@ -5,7 +5,7 @@ date: 2023-06-29 10:41:41
 tags:
     - Linux
 categories:
-    - [computer]
+    - [LINUX]
 ---
 
 > 查看用户组和用户
