@@ -79,6 +79,8 @@ npm -g list
 
 ## 安装和配置Hexo
 
+[Hexo 官网文档](https://hexo.io/zh-cn/)
+
 ```bash
 # 全局安装 hexo
 npm install -g hexo-cli
