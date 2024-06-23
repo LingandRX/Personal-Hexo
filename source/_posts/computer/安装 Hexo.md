@@ -1,17 +1,24 @@
 ---
 layout: post
-title: 安装 Hexo
+title: hexo安装
 date: 2023-06-29 09:51:27
 tags:
-    - Hexo
-    - Node
+  - hexo
+  - node
 categories:
-    - Computer
+  - - computer
 ---
+
+## 序言
+
+1. 安装和配置Git
+2. 安装NVM和Node
+3. 安装和配置Git
 
 ## 安装和配置Git
 
 [Git下载链接](https://git-scm.com/downloads)
+
 ```bash
 # 安装Git
 apt-get -y install git
