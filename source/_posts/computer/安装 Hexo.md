@@ -1,46 +1,59 @@
 ---
 layout: post
-title: hexo安装
+title: 安装 Hexo
 date: 2023-06-29 09:51:27
-tags: 
-    - blog
+tags:
+    - Hexo
+    - Node
 categories:
-    - [computer]
+    - Computer
 ---
 
-## 安装Git
+## 安装和配置Git
 
-> 安装Git
-
-```shell
+[Git下载链接](https://git-scm.com/downloads)
+```bash
+# 安装Git
 apt-get -y install git
-```
 
-> 配置Git
-<!-- more -->
-```shell
+# 配置Git
 git config global user.name="testname"
 git config global user.email="test@email.com"
 ```
 
-## 安装Node.js
+## 安装NVM和Node
 
-> 检测npm和node是否安装
+[nvm文档](https://github.com/nvm-sh/nvm)
+[nvm-windows 下载链接](https://github.com/coreybutler/nvm-windows/releases)
+```bash
+# 安装Node.js
+# 检测npm和node是否安装
+nvm -v
 
-```shell
-npm -v
+# nvm 已安装列表
+nvm list
+# nvm 远程可安装列表
+nvm list available
+# nvm 卸载指定版本
+nvm uninstall [version]
+# nvm 使用指定版本
+nvm use [version]
+
+# 安装顺序
+nvm list available
+nvm install [version]
+nvm list
+nvm use [version]
 node -v
 ```
 
-> 升级npm版本
-
-```shell
+```bash
 npm install npm -g
 ```
 
-> 设置npm淘宝镜像源，查看npm镜像源
+### 设置Nvm和Node镜像源
 
-```shell
+```bash
 # 配置当前安装包的镜像源
 npm install -g <安装包名> --registry=https://registry.npm.taobao.org
 # 本次安装为当前配置的镜像源
@@ -54,35 +67,28 @@ registry = https://registry.npm.taobao.org
 
 > 使用cnpm更换npm
 
-```shell
+```bash
 npm install -g cnpm --registry=https://registry.npm.taobao.org   
 ```
 
 > 查看全局安装的包
 
-```shell
+```bash
 npm -g list
 ```
 
-## 安装Hexo
+## 安装和配置Hexo
 
-```shell
+```bash
+# 全局安装 hexo
 npm install -g hexo-cli
-# 局部安装hexo
+# 局部安装 hexo
 npm install hexo
-#linux
-echo 'PATH="$PATH:./node_modules/.bin"' >> ~/.profile
-```
-
-## 安装Hexo主题
-
-```shell
+# 安装 Hexo 主题
 git clone https://github.com/theme-next/hexo-theme-next /hexo/themes/next
 ```
 
-## 配置Hexo
-
-```shell
+```bash
 # 修改_config.xml
 # 主题
 theme: next

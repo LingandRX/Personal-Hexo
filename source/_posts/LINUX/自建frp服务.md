@@ -3,9 +3,9 @@ title: 自建frp服务
 date: 2024-06-23 20:47:41
 tags:
     - Linux
-    - frp
+    - Frp
 categories:
-    - [LINUX]
+    - Linux
 ---
 
 
