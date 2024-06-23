@@ -3,11 +3,11 @@ layout: post
 title: 配置 Git
 date: 2023-05-31 07:51:51
 tags:
-  - Git
-  - Linux
-  - Windows
+    - Git
+    - Linux
+    - Windows
 categories:
-  - Computer
+    - Computer
 ---
 ## 配置用户信息
 
